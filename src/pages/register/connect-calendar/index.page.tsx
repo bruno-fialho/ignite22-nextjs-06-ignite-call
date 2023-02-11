@@ -5,7 +5,7 @@ import { Button, Heading, MultiStep, Text } from '@ignite-ui/react'
 import { Container, Header } from '../styles'
 import { AuthError, ConnectBox, ConnectItem } from './styles'
 
-export default function Register() {
+export default function ConnectCalendar() {
   const session = useSession()
   const router = useRouter()
 
@@ -27,7 +27,7 @@ export default function Register() {
           ocupadas e os novos eventos à medida em que são agendados.
         </Text>
 
-        <MultiStep size={2} currentStep={1} />
+        <MultiStep size={4} currentStep={2} />
       </Header>
 
       <ConnectBox>
